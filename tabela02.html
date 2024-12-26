@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,th {
@@ -21,11 +22,32 @@
         }
 
         thead,tfoot{
-            background-color: grey;
+            background-color: #494848;
+            color: white;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: #494848;
+        }
+
+        tbody >tr:nth-child(even){/*2n-1*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(odd){/*2n*/
+            background-color: lightgray;
         }
 
         td.num{
-            text-align: right;
+            text-align: right ;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(107, 107, 107, 0.61);
         }
 
     </style>
@@ -36,6 +58,7 @@
 
     <!--  anatomia para tabelas grandes
         table
+         caption
           thead
               tr,td, th  
           tbody
@@ -45,10 +68,11 @@
     
     -->
     <table>
+        <caption>população das unidades federativas</caption>
         <thead>
             <tr>
                 <th>estado</th>
-                <th>população</th>
+                <th scope="col" style="width: 50px;">população</th>
             </tr>
             
         </thead>
@@ -178,5 +202,16 @@
 
 
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore eum expedita aliquam dignissimos? Fugiat, provident eveniet explicabo animi fugit ad odio quas labore perspiciatis molestias, praesentium accusantium veritatis aut?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eius facere distinctio aliquam cumque tempore fuga minus non eligendi aut provident libero impedit id perspiciatis a, eum, assumenda culpa quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et assumenda sint dolores. Modi doloremque ea quam quis asperiores eaque voluptates fugit, blanditiis ducimus rerum temporibus eos aut voluptate porro officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, fugiat ab! Reiciendis iste doloribus, at soluta quos, aperiam eveniet consequatur commodi dolore animi nihil nemo fuga. Repellendus consectetur distinctio quam.</p>
 </body>
 </html>
